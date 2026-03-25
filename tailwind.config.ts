@@ -8,6 +8,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ['var(--font-poppins)', 'sans-serif'],
         bricolage: ['var(--font-bricolage)', 'sans-serif'],
       },
       colors: {
