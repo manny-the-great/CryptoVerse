@@ -1,7 +1,16 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Poppins, Bricolage_Grotesque } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins'
+});
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ['latin'],
+  variable: '--font-bricolage'
+});
 
 export const metadata = {
   title: 'CryptoVerse - Your Gateway to Smarter Crypto Trading',
@@ -15,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen bg-background relative overflow-x-hidden pt-20`}>
+      <body className={`${poppins.className} ${bricolage.variable} min-h-screen bg-background relative overflow-x-hidden pt-20`}>
         {/* Subtle noise and glow overlay below content */}
         <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-800/30 via-background to-background pointer-events-none -z-10" />
         <div className="fixed inset-0 bg-grid-overlay pointer-events-none -z-10 mt-20" />

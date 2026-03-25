@@ -14,11 +14,19 @@ export function Hero() {
         transition={{ duration: 0.5 }}
         className="flex flex-col items-center max-w-4xl"
       >
-        <Badge className="mb-8 hover:bg-neutral-800/80 cursor-pointer transition-colors border-neutral-700/50">
-          New — Introducing CryptoVerse AI Learning Platform <ChevronRight className="w-3 h-3 ml-1 text-secondary" />
+        <Badge className="mb-8 hover:bg-neutral-800/80 cursor-pointer transition-colors border-neutral-700/50 flex items-center gap-2 pr-2">
+          <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-neutral-800 border border-neutral-700/50">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-green opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-green"></span>
+            </span>
+            <span className="text-xs font-semibold text-primary">New</span>
+          </div>
+          <span className="text-secondary">Introducing CryptoVerse AI Learning Platform</span>
+          <ChevronRight className="w-3 h-3 text-secondary" />
         </Badge>
         
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-primary mb-6 leading-tight flex flex-col gap-2">
+        <h1 className="font-bricolage text-5xl md:text-7xl font-extrabold tracking-tight text-primary mb-6 leading-tight flex flex-col gap-2">
           <span>Your Gateway to a</span> 
           <span>Smarter Crypto Future</span>
           <span>Starts Here</span>

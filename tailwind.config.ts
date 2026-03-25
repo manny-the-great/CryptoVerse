@@ -7,6 +7,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        bricolage: ['var(--font-bricolage)', 'sans-serif'],
+      },
       colors: {
         background: '#050505',
         surface: '#0B0F1A',
