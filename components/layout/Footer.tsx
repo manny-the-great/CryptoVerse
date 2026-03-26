@@ -3,10 +3,10 @@ import { Hexagon } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="w-full border-t border-neutral-800/50 py-12 px-6 flex justify-center">
+    <footer className="w-full border-t border-border py-12 px-6 flex justify-center">
       <div className="w-full max-w-6xl flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center gap-2">
-          <Hexagon className="w-6 h-6 fill-neutral-800 stroke-primary" />
+          <Hexagon className="w-6 h-6 fill-neutral-800/10 dark:fill-neutral-800 stroke-primary" />
           <span className="text-xl font-bold tracking-tight text-primary">CryptoVerse</span>
         </div>
         

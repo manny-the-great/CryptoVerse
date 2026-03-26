@@ -14,8 +14,8 @@ export function Hero() {
         transition={{ duration: 0.5 }}
         className="flex flex-col items-center max-w-4xl"
       >
-        <Badge className="mb-8 hover:bg-neutral-800/80 cursor-pointer transition-colors border-neutral-700/50 flex items-center gap-2 pr-2">
-          <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-neutral-800 border border-neutral-700/50">
+        <Badge className="mb-8 hover:bg-surface/80 cursor-pointer transition-colors border-border flex items-center gap-2 pr-2">
+          <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface border border-border">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-green opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-green"></span>
@@ -37,10 +37,10 @@ export function Hero() {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center gap-4">
-          <Button size="lg" className="w-full sm:w-auto px-8 bg-primary text-black transition-all hover:scale-105 active:scale-95">
+          <Button size="lg" className="w-full sm:w-auto px-8 transition-all hover:scale-105 active:scale-95">
             Get Started
           </Button>
-          <Button size="lg" variant="outline" className="w-full sm:w-auto px-8 border-neutral-700 hover:bg-neutral-800 transition-all">
+          <Button size="lg" variant="outline" className="w-full sm:w-auto px-8 transition-all">
             Book Demo <ChevronRight className="w-4 h-4 ml-1 opacity-70" />
           </Button>
         </div>
