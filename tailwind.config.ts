@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,14 +13,15 @@ const config: Config = {
         bricolage: ['var(--font-bricolage)', 'sans-serif'],
       },
       colors: {
-        background: '#050505',
-        surface: '#0B0F1A',
-        primary: '#ffffff',
-        secondary: '#9CA3AF', // text-gray-400
+        background: 'var(--background)',
+        surface: 'var(--surface)',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        border: 'var(--border)',
         accent: {
-          green: '#10B981', // profit
-          red: '#EF4444', // loss
-          purple: '#8B5CF6'
+          green: 'var(--accent-green)',
+          red: 'var(--accent-red)',
+          purple: 'var(--accent-purple)'
         }
       },
       backgroundImage: {

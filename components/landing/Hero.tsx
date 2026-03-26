@@ -26,7 +26,7 @@ export function Hero() {
           <ChevronRight className="w-3 h-3 text-secondary" />
         </Badge>
         
-        <h1 className="font-bricolage text-5xl md:text-7xl font-extrabold tracking-tight text-primary mb-6 leading-tight flex flex-col gap-2">
+        <h1 className="font-bricolage text-5xl md:text-7xl font-extrabold tracking-tight text-gradient-grey-gold mb-6 leading-tight flex flex-col gap-2">
           <span>Your Gateway to a</span> 
           <span>Smarter Crypto Future</span>
           <span>Starts Here</span>

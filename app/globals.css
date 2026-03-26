@@ -3,17 +3,55 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-background text-primary antialiased;
+  :root {
+    --background: #ffffff;
+    --surface: #f9fafb;
+    --primary: #111827;
+    --secondary: #4b5563;
+    --accent-green: #10B981;
+    --accent-red: #EF4444;
+    --accent-purple: #8B5CF6;
+    --border: #e5e7eb;
   }
+
+  .dark {
+    --background: #050505;
+    --surface: #0B0F1A;
+    --primary: #ffffff;
+    --secondary: #9CA3AF;
+    --accent-green: #10B981;
+    --accent-red: #EF4444;
+    --accent-purple: #8B5CF6;
+    --border: #1f2937;
+  }
+
+  body {
+    @apply bg-background text-primary antialiased transition-colors duration-300;
+    background-color: var(--background);
+    color: var(--primary);
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-bricolage tracking-tight;
   }
 }
 
-.bg-grid-overlay {
-  background-size: 40px 40px;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+@layer utilities {
+  .text-gradient-grey-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #9ca3af 0%, #eab308 50%, #ca8a04 100%);
+  }
+
+  .bg-grid-overlay {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  }
+
+  .dark .bg-grid-overlay {
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
 }
