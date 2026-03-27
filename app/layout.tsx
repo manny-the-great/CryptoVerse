@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.variable} ${bricolage.variable} font-sans min-h-screen bg-background relative overflow-x-hidden pt-20 transition-colors duration-300`}>
+      <body className={`${poppins.variable} ${bricolage.variable} font-sans min-h-screen bg-background relative overflow-x-hidden transition-colors duration-300`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -35,7 +35,7 @@ export default function RootLayout({
         >
           {/* Subtle noise and glow overlay below content */}
           <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-200/30 dark:from-neutral-800/30 via-background to-background pointer-events-none -z-10" />
-          <div className="fixed inset-0 bg-grid-overlay pointer-events-none -z-10 mt-20" />
+          <div className="fixed inset-0 bg-grid-overlay pointer-events-none -z-10" />
           
           <div className="relative z-10 w-full text-sm sm:text-base">
             {children}

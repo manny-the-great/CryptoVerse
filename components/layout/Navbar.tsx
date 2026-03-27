@@ -5,8 +5,8 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center border-b border-border/10 bg-background/60 backdrop-blur-md h-20 px-6">
-      <div className="w-full max-w-6xl flex justify-between items-center">
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-center border border-border/20 bg-background/60 backdrop-blur-md h-16 px-6 rounded-full w-[95%] max-w-5xl shadow-lg">
+      <div className="w-full flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div className="text-primary flex items-center justify-center">
