@@ -12,7 +12,7 @@ export function HowItWorks() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-          <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-neutral-800/50 -translate-y-1/2 -z-10" />
+          <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-border -translate-y-1/2 -z-10" />
           
           {[
             { step: '01', title: 'Create Account', desc: 'Sign up securely in seconds. No KYC required for the simulator.' },
@@ -20,7 +20,7 @@ export function HowItWorks() {
             { step: '03', title: 'Start Trading', desc: 'Access real-time markets and test your strategies risk-free.' }
           ].map((item, idx) => (
             <div key={idx} className="relative flex flex-col items-center text-center">
-              <div className="w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center text-xl font-bold text-primary mb-6 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+              <div className="w-16 h-16 rounded-full bg-background border-2 border-primary flex items-center justify-center text-xl font-bold text-primary mb-6 shadow-xl dark:shadow-[0_0_20px_rgba(255,255,255,0.1)]">
                 {item.step}
               </div>
               <h3 className="text-xl font-bold text-primary mb-2">{item.title}</h3>

@@ -25,7 +25,7 @@ export function Hero() {
             rotate: [0, 10, -5, 0]
           }}
           transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: icon.delay }}
-          className={`absolute ${icon.position} ${icon.size} opacity-80 z-0 pointer-events-none transition-all`}
+          className={`absolute ${icon.position} ${icon.size} opacity-40 dark:opacity-80 z-0 pointer-events-none transition-all`}
         >
           <img src={icon.src} alt={icon.alt} className="w-full h-full object-contain" />
         </motion.div>

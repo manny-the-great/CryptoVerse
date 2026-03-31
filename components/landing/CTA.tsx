@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/Button';
 
 export function CTA() {
   return (
-    <section className="py-32 px-6 flex justify-center border-t border-neutral-800/50 relative overflow-hidden bg-[#0A0A0A]">
+    <section className="py-32 px-6 flex justify-center border-t border-border relative overflow-hidden bg-background">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neutral-800/40 via-background to-background pointer-events-none" />
       <div className="w-full max-w-4xl text-center flex flex-col items-center relative z-10">
         <div className="w-20 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 mb-8 rounded-full opacity-50" />
@@ -11,8 +11,8 @@ export function CTA() {
         <p className="text-lg md:text-xl text-neutral-400 max-w-xl mx-auto mb-10 font-light">
           Join thousands of other traders who are learning, practicing, and mastering the cryptocurrency markets risk-free.
         </p>
-        <div className="p-1.5 rounded-2xl bg-gradient-to-r from-neutral-800 via-neutral-700 to-neutral-800 shadow-[0_0_40px_rgba(255,255,255,0.1)] hover:shadow-[0_0_60px_rgba(255,255,255,0.15)] transition-shadow">
-          <Button size="lg" className="px-10 py-6 text-lg bg-black text-primary hover:bg-neutral-900 border border-neutral-600 rounded-xl font-bold tracking-wide w-full h-full flex items-center justify-center">
+        <div className="p-1.5 rounded-2xl bg-gradient-to-r from-border via-surface to-border shadow-xl dark:shadow-[0_0_40px_rgba(255,255,255,0.1)] hover:shadow-2xl transition-shadow">
+          <Button size="lg" className="px-10 py-6 text-lg bg-background text-primary hover:bg-surface border border-border rounded-xl font-bold tracking-wide w-full h-full flex items-center justify-center">
             Get Started For Free
           </Button>
         </div>

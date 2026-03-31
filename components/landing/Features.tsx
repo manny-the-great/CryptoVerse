@@ -14,7 +14,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export function Features() {
   return (
-    <section className="py-24 px-6 flex justify-center border-t border-neutral-800/30 bg-black/40">
+    <section className="py-24 px-6 flex justify-center border-t border-border bg-surface/20">
       <div className="w-full max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4 tracking-tight">Everything you need to succeed</h2>
@@ -25,8 +25,8 @@ export function Features() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, idx) => (
-            <Card key={idx} className="p-6 border-neutral-800/60 bg-surface/40 hover:bg-surface/60 transition-colors group">
-              <div className="w-12 h-12 rounded-lg bg-neutral-900 border border-neutral-800 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-black/50">
+            <Card key={idx} className="p-6 border-border bg-surface/40 hover:bg-surface/60 transition-colors group">
+              <div className="w-12 h-12 rounded-lg bg-background border border-border flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform shadow-lg dark:shadow-black/50">
                 {iconMap[feature.icon]}
               </div>
               <h3 className="text-xl font-bold text-primary mb-2">{feature.title}</h3>

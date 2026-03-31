@@ -5,7 +5,7 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 
 export function Navbar() {
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-center border border-border/20 bg-background/60 backdrop-blur-md h-16 px-6 rounded-full w-[95%] max-w-5xl shadow-lg">
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-center border border-border bg-background/60 backdrop-blur-md h-16 px-6 rounded-full w-[95%] max-w-5xl shadow-md dark:shadow-xl">
       <div className="w-full flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">

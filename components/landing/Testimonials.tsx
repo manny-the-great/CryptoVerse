@@ -4,7 +4,7 @@ import { testimonials } from '@/lib/mockData';
 
 export function Testimonials() {
   return (
-    <section className="py-24 px-6 flex justify-center border-t border-neutral-800/30 bg-[#0A0A0A]/50 relative overflow-hidden">
+    <section className="py-24 px-6 flex justify-center border-t border-border bg-surface/30 relative overflow-hidden">
       <div className="absolute inset-0 bg-neutral-900/[0.02] bg-grid-overlay pointer-events-none" />
       <div className="w-full max-w-6xl relative z-10">
         <div className="text-center mb-16">
@@ -16,12 +16,12 @@ export function Testimonials() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((test, idx) => (
-            <Card key={idx} className="p-8 border-neutral-800/80 bg-[#050505]/80 flex flex-col justify-between hover:bg-neutral-900/60 transition-colors shadow-2xl backdrop-blur-3xl rounded-2xl group">
-              <p className="text-neutral-300 mb-8 text-lg leading-relaxed font-light italic opacity-90 group-hover:opacity-100 transition-opacity">
+            <Card key={idx} className="p-8 border-border bg-surface flex flex-col justify-between hover:bg-surface/80 transition-colors shadow-xl dark:shadow-2xl backdrop-blur-3xl rounded-2xl group">
+              <p className="text-secondary mb-8 text-lg leading-relaxed font-light italic opacity-90 group-hover:opacity-100 transition-opacity">
                 "{test.feedback}"
               </p>
-              <div className="flex items-center gap-4 border-t border-neutral-800/50 pt-5">
-                <div className="w-12 h-12 rounded-full bg-neutral-800 border-2 border-neutral-700 overflow-hidden relative">
+              <div className="flex items-center gap-4 border-t border-border pt-5">
+                <div className="w-12 h-12 rounded-full bg-surface border-2 border-border overflow-hidden relative">
                    <div className="absolute inset-0 bg-gradient-to-br from-neutral-600 to-neutral-900" />
                 </div>
                 <div>

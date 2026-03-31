@@ -11,7 +11,7 @@ import { CTA } from '@/components/landing/CTA';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-background selection:bg-white/20 selection:text-white pb-0">
+    <main className="flex min-h-screen flex-col bg-background selection:bg-primary/10 selection:text-primary pb-0">
       <Navbar />
       <Hero />
       <DashboardPreview />
