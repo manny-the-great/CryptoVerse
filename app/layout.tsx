@@ -34,7 +34,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {/* Subtle noise and glow overlay below content */}
-          <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-200/30 dark:from-neutral-800/30 via-background to-background pointer-events-none -z-10" />
+          <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-900/40 via-background to-background pointer-events-none -z-10" />
           <div className="fixed inset-0 bg-grid-overlay pointer-events-none -z-10" />
           
           <div className="relative z-10 w-full text-sm sm:text-base">
